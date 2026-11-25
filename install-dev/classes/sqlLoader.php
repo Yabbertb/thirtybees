@@ -57,7 +57,7 @@ class InstallSqlLoader
      * @throws PrestaShopDatabaseException
      * @throws PrestaShopException
      */
-    public function __construct(Db $db = null)
+    public function __construct(?Db $db = null)
     {
         if (is_null($db)) {
             $db = Db::getInstance();
