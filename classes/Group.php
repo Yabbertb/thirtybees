@@ -227,6 +227,8 @@ class GroupCore extends ObjectModel
      */
     public static function getReductionByIdGroup($idGroup)
     {
+        $idGroup = (int) $idGroup;
+
         if (!isset(static::$cache_reduction['group'][$idGroup])) {
             static::$cache_reduction['group'][$idGroup] = Db::readOnly()->getValue(
                 (new DbQuery())
