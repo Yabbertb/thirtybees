@@ -170,6 +170,7 @@ smartyRegisterFunction($smarty, 'modifier', 'is_object', 'is_object');
 smartyRegisterFunction($smarty, 'modifier', 'is_string', 'is_string');
 smartyRegisterFunction($smarty, 'modifier', 'microtime', 'microtime');
 smartyRegisterFunction($smarty, 'modifier', 'number_format', 'number_format');
+smartyRegisterFunction($smarty, 'modifier', 'ceil', 'ceil');
 
 if (defined('_PS_ADMIN_DIR_')) {
     smartyRegisterFunction($smarty, 'function', 'l', ['Translate', 'smartyAdminTranslate'], false);
